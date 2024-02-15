@@ -18,8 +18,8 @@
         <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- shape container -->
           <!-- rectabgle -->
-          <div class="card bg-base-100 shadow-xl">
-            <figure class="my-5">
+          <div class="card bg-base-100 shadow-xl hover:bg-pink-200">
+            <figure>
               <img src="./images/triangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
@@ -50,7 +50,7 @@
               <div class="card-actions">
                 <button
                   onclick="triangleCalculate()"
-                  class="btn btn-primary w-full"
+                  class="text-center text-white text-xl font-bold btn bg-sky-600 w-full"
                 >
                   Calculate
                 </button>
@@ -58,8 +58,8 @@
             </div>
           </div>
           <!-- Rectangle -->
-          <div class="card bg-base-100 shadow-xl">
-            <figure class="my-5">
+          <div class="card bg-base-100 shadow-xl hover:bg-sky-300">
+            <figure>
               <img src="./images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
@@ -90,7 +90,7 @@
               <div class="card-actions justify-end">
                 <button
                   onclick="rectangleCalculate()"
-                  class="btn btn-primary w-full"
+                  class="text-center text-white text-xl font-bold btn bg-sky-600 w-full"
                 >
                   Calculate
                 </button>
@@ -103,58 +103,89 @@
               <img src="./images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions ">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">Parallelogram</h2>
+              <p class="text-3xl">Area (A) = b X h</p>
+              <div>
+                <input
+                  id="parallelogram-base"
+                  type="text"
+                  placeholder="Base"
+                  class="w-24 p-2 text-2xl bg-zinc-100 rounded"
+                />
+                <span class="mr-2 ml-1 text-xl">cm</span>
+                <input
+                  type="text"
+                  name=""
+                  id="parallelogram-height"
+                  class="w-24 p-2 text-2xl bg-zinc-100 rounded"
+                  placeholder="Height"
+                />
+                <span class="text-xl">cm</span>
+              </div>
+              <div>
+                <p class="text-xl">
+                  Area: <span id="parallelogram-area"></span
+                  ><span> cm <sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateParallelogram()"
+                  class="text-center text-white text-xl font-bold btn bg-sky-600 w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Rhombus -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="./images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <div class="card-actions">
+                <button
+                  class="text-center text-white text-xl font-bold btn bg-sky-600 w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Pentagon -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="./images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary w-full">Buy Now</button>
+                <button
+                  class="text-center text-white text-xl font-bold btn bg-sky-600 w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Ellipse -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="./images/ellipse.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button
+                  class="text-center text-white text-xl font-bold btn bg-sky-600 w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -170,5 +201,6 @@
       </div>
     </main>
     <script src="./scripts/calculate.js"></script>
+    <script src="./scripts/calculate parallelogram-.js"></script>
   </body>
 </html>
