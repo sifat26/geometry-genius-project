@@ -15,11 +15,11 @@
     <header></header>
     <main>
       <div class="flex flex-col md:flex-row gap-7">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- shape container -->
-          <!-- Triangle -->
+          <!-- rectabgle -->
           <div class="card bg-base-100 shadow-xl">
-            <figure>
+            <figure class="my-5">
               <img src="./images/triangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
@@ -27,53 +27,85 @@
               <p>Area (A) = 0.5 X b X h</p>
               <div>
                 <input
-                id="triangle-base"
+                  id="triangle-base"
                   type="text"
                   placeholder="b"
-                  class="w-24 p-2 text-2xl rounded-sm"
+                  class="w-24 p-2 text-2xl rounded-sm border border-gray-300"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
-                id="triangle-height"
+                  id="triangle-height"
                   type="text"
                   placeholder="h"
-                  class="w-24 p-2 text-2xl rounded-sm"
+                  class="w-24 p-2 text-2xl rounded-sm border border-gray-300"
                 />
                 <span>cm</span>
               </div>
+              <div>
+                <p>
+                  Area: <span id="triangle-area"></span
+                  ><span> cm <sup>2</sup></span>
+                </p>
+              </div>
               <div class="card-actions">
-                <button onclick="triangleCalculate()" class="btn btn-primary w-full ">Calculate</button>
+                <button
+                  onclick="triangleCalculate()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Rectangle -->
           <div class="card bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+            <figure class="my-5">
+              <img src="./images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <h2 class="card-title">Rectangle</h2>
+              <p>Area (A) = W X L</p>
+              <div>
+                <input
+                  id="rectangle-base"
+                  type="text"
+                  placeholder="W"
+                  class="w-24 p-2 text-2xl rounded-sm border border-gray-300"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  id="rectangle-height"
+                  type="text"
+                  placeholder="L"
+                  class="w-24 p-2 text-2xl rounded-sm border border-gray-300"
+                />
+                <span>cm</span>
+                <div>
+                  <p>
+                    Area: <span id="rectangle-area"></span
+                    ><span> cm <sup>2</sup></span>
+                  </p>
+                </div>
+              </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button
+                  onclick="rectangleCalculate()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Parallelogram -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="./images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
+              <div class="card-actions ">
                 <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
